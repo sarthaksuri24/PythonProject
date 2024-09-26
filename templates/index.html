@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommerceFest Registration</title>
+    <link rel="stylesheet" href=".\static\styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CommerceFest Registration</h1>
+        <div class="content">
+            <div class="event-details">
+                <h2>Event Details</h2>
+                <p><strong>Date:</strong> 28 October 2024</p>
+                <p><strong>Time:</strong> 9:30 AM Onwards</p>
+                <p><strong>Location:</strong> K.C.INTERNATIONAL SCHOOL, JAMMU</p>
+                <div class="payment-section">
+                    <p><strong>Payment Number:</strong> [Leave Empty]</p>
+                    <img src="./static/qr_code.jpeg" alt="UPI QR Code" class="qr-code">
+                </div>
+            </div>
+
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" name="tickets" required><br><br>
+
+        <label for="paymentProof">Payment Proof (Image):</label>
+        <input type="file" id="paymentProof" name="paymentProof" accept="image/*" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+</div>
+  
+
+</body>
+</html>
